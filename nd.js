@@ -37,7 +37,7 @@ function registrarCalificacion() {
 function mostrarCantidadVotos() {
     servicios.forEach(servicio => {
         if (servicio.calificaciones.length === 0) {
-            alert($`{servicio.nombre}: No hay calificaciones registradas.`);
+            alert(`${servicio.nombre}: No hay calificaciones registradas.`);
         } else {
             let conteo = [0, 0, 0, 0, 0]; // 1 a 5
             servicio.calificaciones.forEach(c => {
